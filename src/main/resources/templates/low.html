@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" th:href="@{css/style.css}" rel="stylesheet" />
+    <title>Fever controller - low temp</title>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav">
+            <a href="index">Index</a>
+            <a href="contact">Add contact</a>
+            <a href="contact_list">Contact list</a>
+            <a href="fever_controller">Fever Controller</a>
+            <a href="about">About</a>
+        </nav>
+    </header>
+    <br>
+    <div>
+        <p th:text="${text}"></p>
+        <p th:utext="${text2}"></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" th:href="@{css/style.css}" rel="stylesheet" />
+    <title>Exercise - contact page</title>
+</head>
+<body>
+<header id="header">
+    <nav id="nav">
+        <a href="index">Index</a>
+        <a href="contact">Add contact</a>
+        <a href="contact_list">Contact list</a>
+        <a href="fever_controller">Fever Controller</a>
+        <a href="about">About</a>
+    </nav>
+</header>
+<form th:action="@{contact}" method="post">
+    <input type="text" id="input" name="input" placeholder="Enter something"/>
+    <button type="submit">Send</button>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise - contact list</title>
+    <link type="text/css" th:href="@{css/style.css}" rel="stylesheet" />
+</head>
+<body>
+<header id="header">
+    <nav id="nav">
+        <a href="index">Index</a>
+        <a href="contact">Add contact</a>
+        <a href="contact_list">Contact list</a>
+        <a href="fever_controller">Fever Controller</a>
+        <a href="about">About</a>
+    </nav>
+</header>
+    <div th:if="${contacts.isEmpty()}">
+        <h3>The list is empty...</h3>
+    </div>
+    <ul>
+        <li th:each="contact : ${contacts}">
+            <p th:text="${contact}"></p>
+        </li>
+    </ul>
+</body>
+</html>
